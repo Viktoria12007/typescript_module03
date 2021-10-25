@@ -9,7 +9,18 @@
     "init": "npm i",
     "test": "npm run test:unit",
     "test:unit": "jest",
+    "task1": "ts-node ./src/task1/task1.ts",
     "test:task1": "jest /__tests__/task1",
+    "task2": "ts-node ./src/task2/task2",
+    "test:task2": "jest /__tests__/task2",
+    "task3": "ts-node ./src/task3/task3.ts",
+    "test:task3": "jest /__tests__/task3",
+    "task4": "ts-node ./src/task4/task4.ts",
+    "test:task4": "jest /__tests__/task4",
+    "task5": "ts-node ./src/task5/task5.ts",
+    "test:task5": "jest /__tests__/task5",
+    "task6": "ts-node ./src/task6/task6.ts",
+    "test:task6": "jest /__tests__/task6",
     "test:watch": "npm run jest -- --watch"
   },
   "devDependencies": {
