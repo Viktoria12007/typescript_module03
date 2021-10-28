@@ -14,7 +14,13 @@
 
 С помощью команды ``npm ci`` установите зависимости репозитория.
 
-### 1.3. Проверьте репозиторий
+### 1.3. Подготовьте IDE (WebStorm, VSCode)
+
+Если вы используете VS Code, то установите плагин для ESLint https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+
+Если вы используете WebStorm, то включите плагин для ESLint https://www.jetbrains.com/help/webstorm/eslint.html#ws_js_eslint_automatic_configuration
+
+### 1.4. Проверьте репозиторий
 
 С помощью команды ``npm run check`` проверьте, что вы выполнили все действия правильно.
 
