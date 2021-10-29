@@ -1,5 +1,13 @@
+// @ts-ignore
 import {IsTypeEqual, FirstArgument, typeAssert} from '../type-assertions';
 import {logPerson, isUser, isAdmin, Person, persons} from '../../src/task5/task5';
+
+describe('task5', () => {
+    it('should pass tests if no errors in file', () => {
+        console.log('Для этой задачи существуют только тесты типов. Если в терминале нет ошибок - задача выполнена правильно.')
+        expect(true).toBe(true);
+    })
+});
 
 typeAssert<
     IsTypeEqual<

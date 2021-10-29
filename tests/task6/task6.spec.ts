@@ -1,5 +1,14 @@
+// @ts-ignore
 import {IsTypeEqual, IsTypeAssignable, Not, FirstArgument, SecondArgument, typeAssert} from '../type-assertions';
 import {logPerson, isUser, isAdmin, Person, persons, filterUsers} from '../../src/task6/task6';
+
+
+describe('task6', () => {
+    it('should pass tests if no errors in file', () => {
+        console.log('Для этой задачи существуют только тесты типов. Если в терминале нет ошибок - задача выполнена правильно.')
+        expect(true).toBe(true);
+    })
+});
 
 typeAssert<
     IsTypeAssignable<
@@ -7,6 +16,7 @@ typeAssert<
         {name: string}
         >
     >();
+
 typeAssert<
     IsTypeAssignable<
         SecondArgument<typeof filterUsers>,
