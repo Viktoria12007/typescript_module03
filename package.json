@@ -5,7 +5,6 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "check": "./scripts/check.sh",
     "init": "npm i",
     "test": "npm run test:unit",
     "test:unit": "jest",
