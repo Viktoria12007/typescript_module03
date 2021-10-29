@@ -50,5 +50,8 @@ export type ArrayElement<T> = T extends (infer I)[] ? I : never;
 /**
  * A simple type assertion function which always expects a true-type.
  */
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment, @typescript-eslint/no-empty-function, @typescript-eslint/no-unused-vars
 // @ts-ignore
-export function typeAssert<T extends true>() {}
+export function typeAssert<T extends true>(): void {
+    void 0;
+}
