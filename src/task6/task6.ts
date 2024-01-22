@@ -51,7 +51,7 @@ export const persons: Person[] = [
 export const isAdmin = (person: Person): person is Admin => person.type === 'admin';
 export const isUser = (person: Person): person is User => person.type === 'user';
 
-export function logPerson(person: Person) {
+export function logPerson(person: Person): void {
     let additionalInformation = '';
     if (isAdmin(person)) {
         additionalInformation = person.role;
@@ -62,7 +62,7 @@ export function logPerson(person: Person) {
     console.log(` - ${person.name}, ${person.age}, ${additionalInformation}`);
 }
 
-export function filterUsers(persons: Person[], criteria: unknown): User[] {
+export function filterUsers(persons: Person[], criteria: Partial<User>): User[] {
     return persons.filter(isUser).filter((user) => {
         const criteriaKeys = Object.keys(criteria) as (keyof User)[];
         return criteriaKeys.every((fieldName) => {

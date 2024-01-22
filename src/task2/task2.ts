@@ -25,10 +25,23 @@ Expected:
     whatDoesThePetSay(dog) -> dog.bark() -> "bark!"
 */
 
+// пользовательский тайпгард
+function isDog(pet: Dog | Cat): pet is Dog {
+    return 'bark' in pet ? true : false;
+}
+
 export function whatDoesThePetSay(pet: Dog | Cat): string {
-    // ---Start coding here---
-    return 'Nothing :('
-    // ---End coding here---
+    // пользовательский тайпгард
+    if (isDog(pet)) {
+        return pet.bark();
+    } return pet.meow();
+    // обычный тайпгард
+    // return 'bark' in pet ? pet.bark() : pet.meow();
+    // тайпгард через оператор in
+    // if ('bark' in pet) {
+    //     return pet.bark();
+    // }
+    // return pet.meow();
 }
 
 console.log(whatDoesThePetSay(cat));
